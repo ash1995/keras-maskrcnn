@@ -92,7 +92,7 @@ class CocoGenerator(Generator):
         image_info = self.coco.loadImgs(self.image_ids[image_index])[0]
 
         # get ground truth annotations
-        annotations_ids = self.coco.getAnnIds(imgIds=[self.image_ids[image_index]], iscrowd=False)
+        annotations_ids = self.coco.getAnnIds(imgIds=self.image_ids[image_index], iscrowd=False)
         annotations     = {
             'labels': np.empty((0,)),
             'bboxes': np.empty((0, 4)),

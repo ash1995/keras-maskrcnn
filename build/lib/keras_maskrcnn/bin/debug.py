@@ -85,7 +85,7 @@ def parse_args(args):
 
     coco_parser = subparsers.add_parser('coco')
     coco_parser.add_argument('coco_path',  help='Path to dataset directory (ie. /tmp/COCO).')
-    coco_parser.add_argument('--coco-set', help='Name of the set to show (defaults to val2017).', default='val')
+    coco_parser.add_argument('--coco-set', help='Name of the set to show (defaults to val2017).', default='val2017')
 
     csv_parser = subparsers.add_parser('csv')
     csv_parser.add_argument('annotations', help='Path to a CSV file containing annotations for evaluation.')
