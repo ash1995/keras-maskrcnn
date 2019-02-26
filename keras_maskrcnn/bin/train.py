@@ -150,7 +150,7 @@ def create_generators(args):
 
         train_generator = CocoGenerator(
             args.coco_path,
-            'train2017',
+            'train',
             transform_generator=transform_generator,
             batch_size=args.batch_size,
             config=args.config
@@ -158,7 +158,7 @@ def create_generators(args):
 
         validation_generator = CocoGenerator(
             args.coco_path,
-            'val2017',
+            'val',
             batch_size=args.batch_size,
             config=args.config
         )
